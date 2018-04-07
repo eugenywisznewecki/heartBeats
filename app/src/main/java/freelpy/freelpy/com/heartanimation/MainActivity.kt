@@ -16,5 +16,6 @@ class MainActivity : AppCompatActivity() {
 		animation.interpolator = MyInterpolator()
 
 		imageViewW.startAnimation(animation)
+		//changes
 	}
 }
