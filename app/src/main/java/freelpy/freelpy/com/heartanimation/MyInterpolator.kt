@@ -18,4 +18,6 @@ class MyInterpolator : BounceInterpolator() {
 	private fun bounce(t: Float): Float {
 		return t * t
 	}
+
+	//some changes
 }
