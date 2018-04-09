@@ -7,19 +7,28 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'io.fabric'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias '123123'
+            keyPassword '123123'
+            storeFile file('/home/ink/Work/key.jks')
+            storePassword '123123'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "freelpy.freelpy.com.heartanimation"
         minSdkVersion 22
         targetSdkVersion 27
-        versionCode 3
-        versionName "1.2"
+        versionCode 4
+        versionName "1.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }
