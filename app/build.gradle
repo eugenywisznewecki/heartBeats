@@ -11,7 +11,7 @@ android {
         config {
             keyAlias '123123'
             keyPassword '123123'
-            storeFile file('/home/ink/Work/key.jks')
+            storeFile file('/home/inkserv/Documents/key.jks')
             storePassword '123123'
         }
     }
